@@ -1,17 +1,21 @@
-import React, { useState, useEffect } from "react";
-import {
-  Menu, X, Phone, Mail, Box, Truck,
-  ShieldCheck, BarChart3, Clock,
-  MapPin, Send, Globe
-} from "lucide-react";
+
 import Home from "./components/Home";
+import Features from "./components/Feature";
+import About from "./components/About";
+
+import  Contact  from "./components/Contact";
+import Brands from "./components/Brand";
 
 export default function NexonWebsite() {
   
   return (
-    <div className="bg-white text-slate-800">
-
+    // <div className="bg-white text-slate-800">
+<>
     <Home/>
+    <Features/>
+    <Brands/>
+    <About/>
+    <Contact/>
 
       {/* TOP BAR */}
       {/* <div className="hidden lg:flex justify-between px-10 py-2 text-sm bg-blue-600 text-white">
@@ -191,6 +195,7 @@ export default function NexonWebsite() {
       {/* <footer className="py-10 text-center text-slate-500 border-t">
         © 2026 Nexon Services. All Rights Reserved.
       </footer> */}
-    </div>
+    {/* </div> */}
+</>
   );
 }
