@@ -11,10 +11,11 @@ import MasterService from "./components/MasterServices";
 import Track from "./components/Track";
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
 import Navbar from "./components/Navbar";
-
+import DashHome from './dashboard/DashHome'
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import LoginForm from "./components/Login";
 
 export const ScrollToHash = () => {
   const location = useLocation();
@@ -42,7 +43,10 @@ export default function NexonWebsite() {
             <Route index element={<MainLayout />} />
             <Route path="about" element={<MasterAbout />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="/login" element={<LoginForm/>}/>
+            
           </Route>
+          <Route path="/dash" element={<DashHome/>}/>
         </Routes>
 
       </BrowserRouter>

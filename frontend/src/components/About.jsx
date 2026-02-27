@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+
+  const navigate=useNavigate();
+
   return (
     <section className="bg-white py-12 md:py-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
@@ -33,7 +37,9 @@ const About = () => {
             </p>
 
             {/* Button */}
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition duration-300">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition duration-300"
+              onClick={()=>{navigate('/about')}}
+            >
               Read More
             </button>
 

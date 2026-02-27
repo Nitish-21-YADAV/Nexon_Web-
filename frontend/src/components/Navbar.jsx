@@ -23,6 +23,7 @@ function Navbar() {
           <Link to="/#track" className="hover:text-blue-600 transition">Track Shipment</Link>
           <Link to="about" className="hover:text-blue-600 transition">About Us</Link>
           <Link to="contact" className="hover:text-blue-600 transition">Contact Us</Link>
+          <Link to="login" className="hover:text-blue-600 transition">Login</Link>
         </div>
 
         <div className="md:hidden">
